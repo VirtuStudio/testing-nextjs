@@ -12,7 +12,7 @@ export default function Post({ post }) {
 export const getStaticPaths = () => {
   return {
     paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
-    fallback: true, // can also be true or 'blocking'
+    fallback: false, // can also be true or 'blocking'
   };
 };
 
